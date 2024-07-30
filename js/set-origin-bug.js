@@ -41,40 +41,22 @@ function setBgImgInit() {
 
   switch (bg_img["type"]) {
     case "1":
-      $("body").css(
-        "background-image",
-        `url("./img/background${1 + ~~(Math.random() * 10)}.webp")`,
-      );
-      // $("#bg").attr(
-      //   "src",
-      //   `./img/background${1 + ~~(Math.random() * 10)}.webp`
-      // ); //随机默认壁纸
-      break;
+      $("#bg").attr(
+        "src",
+        `./img/background${1 + ~~(Math.random() * 10)}.webp`
+      ); //随机默认壁纸
+      break; 
     case "2":
-      $("body").css("background-image", `url("${bg_img_preinstall[2]}")`);
-      // $("#bg").attr("src", bg_img_preinstall[2]); //必应每日
+      $("#bg").attr("src", bg_img_preinstall[2]); //必应每日
       break;
     case "3":
-      $("body").css("background-image", `url("${bg_img_preinstall[3]}")`);
-      // $("#bg").attr("src", bg_img_preinstall[3]); //随机风景
+      $("#bg").attr("src", bg_img_preinstall[3]); //随机风景
       break;
     case "4":
-      $("body").css("background-image", `url("${bg_img_preinstall[4]}")`);
-      // $("#bg").attr("src", bg_img_preinstall[4]); //随机动漫
+      $("#bg").attr("src", bg_img_preinstall[4]); //随机动漫
       break;
   }
 }
-
-// 立即更改背景图片
-function changeBg(type) {
-  $("body").css("background-image", `url("${bg_img_preinstall[type]}")`);
-}
-
-// 监听壁纸类型选择
-$("input[name='wallpaper-type']").click(function() {
-  var type=$(this).val();
-  changeBg(type);
-})
 
 $(document).ready(function () {
   // 壁纸数据加载
