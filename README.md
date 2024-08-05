@@ -1,4 +1,4 @@
-改项目详细见如下链接：
+该项目详细见如下链接：
 
 [个人主页home3.0](https://wiki.onedayxyy.cn/docs/home3.0)
 
