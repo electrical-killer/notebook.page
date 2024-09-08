@@ -30,7 +30,7 @@ function getBgImg() {
 // 随机选择一张默认背景图片
 function getRandomLocalImg() {
   let imgIndex = 1 + ~~(Math.random() * 10);
-  return `./img/background${imgIndex}.png`;
+  return `./img/background${imgIndex}.webp`;
 }
 
 // 设置随机本地背景图片
@@ -58,12 +58,12 @@ function setBgImgDefault() {
       if (img.naturalWidth !== 0) {
         callback(imgUrl); // 图片加载成功，调用回调函数并传入图片URL
       } else {
-        callback("./img/background1.png"); // 使用默认图片URL
+        callback("./img/background1.webp"); // 使用默认图片URL
       }
     };
 
     img.onerror = () => {
-      callback("./img/background1.png"); // 图片加载失败，使用默认图片URL
+      callback("./img/background1.webp"); // 图片加载失败，使用默认图片URL
     };
 
     img.src = imgUrl;
@@ -72,7 +72,7 @@ function setBgImgDefault() {
 
 let bg_img_preinstall = {
   type: "1", // 1:默认背景 2:每日一图 3:随机风景 4:随机动漫
-  1: "./img/background2.png", // 默认背景
+  1: "./img/background2.webp", // 默认背景
   2: "https://api.dujin.org/bing/1920.php", // 每日一图
   3: "https://api.btstu.cn/sjbz/api.php?lx=fengjing&format=images", // 随机风景
   4: "https://www.dmoe.cc/random.php", // 随机动漫
