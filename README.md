@@ -1,7 +1,5 @@
 该项目详细见如下链接：
 
-[个人主页home3.0](https://wiki.onedayxyy.cn/docs/home3.0)
+[个人网站起始页](https://www.eksnotebook.com)
 
-https://wiki.onedayxyy.cn/docs/home3.0
-
-![image-20240806062110278](https://onedayxyy.cn/images/image-20240806062110278.png)
+<img src="https://img.eksnotebook.com/images/202411162215731.png"/>
