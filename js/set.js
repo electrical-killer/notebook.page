@@ -29,7 +29,7 @@ function getBgImg() {
 
 // 随机选择一张默认背景图片
 function getRandomLocalImg() {
-  let imgIndex = 1 + ~~(Math.random() * 10);
+  let imgIndex = 1 + ~~(Math.random() * 110);
   return `./img/background${imgIndex}.webp`;
 }
 
@@ -58,12 +58,12 @@ function setBgImgDefault() {
       if (img.naturalWidth !== 0) {
         callback(imgUrl); // 图片加载成功，调用回调函数并传入图片URL
       } else {
-        callback("./img/background1.webp"); // 使用默认图片URL
+        callback("./img/background40.webp"); // 使用默认图片URL
       }
     };
 
     img.onerror = () => {
-      callback("./img/background1.webp"); // 图片加载失败，使用默认图片URL
+      callback("./img/background40.webp"); // 图片加载失败，使用默认图片URL
     };
 
     img.src = imgUrl;
